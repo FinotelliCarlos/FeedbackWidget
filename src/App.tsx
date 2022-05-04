@@ -1,23 +1,7 @@
-import { useState } from 'react'
+import { Widget } from "./components/Widget";
 
-function App() {
-
-  const [count, setCount] = useState(0)
-
-  function setIncrement(){
-    setCount(count + 1)
-  }
-  function setDecrement(){
-    setCount(count - 1)
-  }
-
+export function App(){
   return (
-    <div className="App">
-      {count}
-      <button onClick={setIncrement}>+</button>
-      <button onClick={setDecrement}>-</button>
-    </div>
+    <Widget />
   )
 }
-
-export default App
