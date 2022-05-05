@@ -11,6 +11,8 @@ interface FeedbackContentStepProps {
 
 export function FeedbackContentStep({feedbackType, onFeedbackRestartRequested}: FeedbackContentStepProps){
   const [screenshot , setScreenshot] = useState<string | null>(null)
+  const [comment, setComment] = useState('')
+
   const feedbackTypeInfo = feedbackTypes[feedbackType]
 
   return(
@@ -31,6 +33,7 @@ export function FeedbackContentStep({feedbackType, onFeedbackRestartRequested}: 
       <textarea 
         className="min-w-[304px] w-full min-h-[112px] text-sm placeholder-zinc-400 text-zinc-100 border-zinc-600 bg-transparent rounded-md focus:border-brand-500 focus:ring-brand-500 focus:ring-1 resize-none focus:outline-none scrollbar scrollbar-thumb-zinc-700 scrollbar-track-transparent scrollbar-thin"
         placeholder="Conte com detalhes oque está acontecendo..."
+        onChange={event => setComment(event.target.value)}
       />
       <footer className="flex gap-2 mt-2">
         <ScreenshotButton 
