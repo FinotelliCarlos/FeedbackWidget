@@ -48,7 +48,7 @@ export function WidgetForm() {
         />
       )}
 
-      <footer className="text-xs text-neutral-400 mt-4">
+      <footer className="text-xs text-neutral-400 mt-8">
         Feito por{' '}
         <a
           className="underline underline-offset-2"
