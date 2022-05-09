@@ -32,13 +32,11 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 - HTML
 - Typescript
-- tailwindcss
-- postcss
-- html2canvas
-- tailwindcss/forms
-- tailwind-scrollbar
-- phosphor-react
-- headlessui/react
+- Tailwindcss
+- Html2canvas
+- Phosphor-react
+- Vite
+- Axios
 
 ---
 
